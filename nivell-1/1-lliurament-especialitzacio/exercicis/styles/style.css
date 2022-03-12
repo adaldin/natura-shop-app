@@ -169,7 +169,7 @@
             }
         }
         /* --------------- */
-        /* TABLET (+48em)*/
+        /* DESKTOP (+48em)*/
         /* --------------- */
         
         @media (min-width: 48em) {
@@ -180,7 +180,6 @@
             }
             .article__container {
                 flex: 60%;
-                flex-wrap: wrap;
             }
             .item__article {
                 background-color: #1f6bb0;
