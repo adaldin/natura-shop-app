@@ -31,7 +31,32 @@ body {
 
 /* ------------- */
 
-@keyframes
+
+/* KEYFRAMES */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes translateY {
+    0% {
+        opacity: 0;
+        transition: ease-in;
+        transform: translateY(4em);
+    }
+    100% {
+        opacity: 1;
+        transition: ease-in;
+        transform: translateY(0);
+    }
+}
+
+
 /* ------- */
 
 
@@ -79,6 +104,7 @@ body {
     width: 5em;
     flex-grow: 1;
     order: 0;
+    animation: fadeIn 1s ease-in;
 }
 
 .menu__container {
@@ -119,6 +145,7 @@ body {
 /* bottom */
 
 .bottom--band__colored {
+    animation: translateY 1s ease-in;
     flex-basis: 80%;
     color: #fffefe;
     font-size: 1.5em;
