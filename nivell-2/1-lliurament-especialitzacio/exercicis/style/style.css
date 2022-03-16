@@ -31,6 +31,31 @@ body {
 
 /* ------------- */
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes translateY {
+    0% {
+        opacity: 0;
+        transition: ease-in;
+        transform: translateY(4em);
+    }
+    100% {
+        opacity: 1;
+        transition: ease-in;
+        transform: translateY(0);
+    }
+}
+
+
+/* ------- */
+
 
 /* MOBILE < 22.5em */
 
@@ -76,6 +101,7 @@ body {
     width: 5em;
     flex-grow: 1;
     order: 0;
+    animation: fadeIn 1s ease-in;
 }
 
 .menu__container {
@@ -126,6 +152,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    animation: translateY 1s ease-in;
 }
 
 
