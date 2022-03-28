@@ -1,0 +1,11 @@
+@import "../utilities";
+.was-validated :invalid~.invalid-feedback {
+    background-color: $secondary;
+    color: white;
+    font-weight: bold;
+    margin-top: -0.25rem;
+    padding: 0.5rem;
+    border: $danger 1px solid;
+    font-style: italic;
+    font-size: small;
+}

@@ -1,0 +1,19 @@
+@import "../utilities";
+// body color not collapsed
+button.accordion-button:not(.collapsed) {
+    background-color: $body-bg;
+    color: $gray-900;
+}
+
+button.accordion-button.collapsed::after {
+    background-image: url("/images/icon-arrow.svg");
+}
+
+button.accordion-button:not(.collapsed)::after {
+    background-image: url("/images/icon-arrow-opened.svg");
+    transform: rotate(-180deg);
+}
+
+button.accordion-button:hover {
+    color: $secondary;
+}

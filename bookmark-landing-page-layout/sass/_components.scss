@@ -1,0 +1,46 @@
+@import "./utilities";
+//BUTTONS
+// button-#login-navbar-header
+.navbar-nav {
+    .nav-item {
+        .btn-secondary {
+            color: $light;
+            font-weight: bold;
+        }
+        .btn-secondary:hover {
+            background-color: $light;
+            color: $secondary;
+        }
+    }
+}
+
+//buttons-primary
+button.btn-primary:hover {
+    background-color: $light;
+    color: $primary;
+}
+
+//buttons-light
+button.btn-light {
+    background-color: $gray-300;
+    color: $dark;
+    opacity: 0.6;
+    border: 1px solid $dark
+}
+
+button.btn-light:hover {
+    background-color: $light;
+    color: $dark;
+    opacity: 1;
+    border: 1px solid $dark;
+}
+
+// button-#submit-form-footer
+#submit-btn {
+    color: $light;
+    font-weight: bold;
+    &:hover {
+        background-color: $light;
+        color: $secondary;
+    }
+}
