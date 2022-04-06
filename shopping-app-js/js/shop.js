@@ -263,7 +263,7 @@ function printCart() {
     }
 
     for (let productProperties of cart) {
-        // nullish coleascing operator to pick subTotalWithDiscount if the product applys to promotions
+        // nullish coleascing operator to pick subTotalWithDiscount if the product applies to promotions
         printProduct += `<li class="row align-items-baseline">
         <i class="bi bi-bag-check-fill col-1"></i>
         <h6 class="col-11"> ${productProperties.name}</h6>
