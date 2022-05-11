@@ -298,41 +298,48 @@ describe('Function "moviesAverageByCategory"', () => {
 
   it(' should return the average score of 2 movies with score 7 each', () => {
     expect(moviesAverageByCategory([
-      { score: 7,
-        genre: ['Drama'], 
+      {
+        score: 7,
+        genre: ['Drama'],
       },
-      { score: 7,
-        genre: ['Drama'], 
+      {
+        score: 7,
+        genre: ['Drama'],
       }
     ],
-    'Drama')).toBe(7);
+      'Drama')).toBe(7);
   });
 
   it('should be rounded to 2 decimals places', () => {
     expect(moviesAverageByCategory([
-      { score: 7,
-        genre: ['Drama'], 
+      {
+        score: 7,
+        genre: ['Drama'],
       },
-      { score: 6,
-        genre: ['Drama'], 
+      {
+        score: 6,
+        genre: ['Drama'],
       }
     ],
-    'Drama')).toBe(6.50);
+      'Drama')).toBe(6.50);
   });
 
   it('should not take into consideration films of other category', () => {
     expect(moviesAverageByCategory([
-      { score: 5,
-        genre: ['Drama'], 
+      {
+        score: 5,
+        genre: ['Drama'],
       },
-      { score: 10,
-        genre: ['Action'], 
+      {
+        score: 10,
+        genre: ['Action'],
       },
-      { score: 10,
-        genre: ['Action'], 
+      {
+        score: 10,
+        genre: ['Action'],
       }
     ],
-    'Action')).toBe(10);
+      'Action')).toBe(10);
   });
 
   /* Bug fixing, to review 
@@ -342,14 +349,16 @@ describe('Function "moviesAverageByCategory"', () => {
   */
   it('should return average even if one of the movies does not have score', () => {
     expect(moviesAverageByCategory([
-      { score: 5,
-        genre: ['Action'], 
+      {
+        score: 5,
+        genre: ['Action'],
       },
-      { score: '',
-        genre: ['Action'], 
+      {
+        score: '',
+        genre: ['Action'],
       }
     ],
-    'Action')).toBe(5);
+      'Action')).toBe(5);
   });
 
 });
